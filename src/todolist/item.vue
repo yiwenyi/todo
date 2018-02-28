@@ -33,7 +33,7 @@ export default {
     font-size 24px
     border-bottom 1px solid rgba(0,0,0,0,0.06)
     &:hover{
-      background-color pink
+      background-color #FEDFE1
       .destory:after{
         content:'x'
       }
@@ -66,11 +66,24 @@ export default {
     border none 
     appearance none
     outline none 
+    padding 0 10px
     &:after{
-      content url('../assets/images/circle.svg')
+      // content url('../assets/images/circle.svg')
+      content ''
+      border 2px solid #D0104C
+      width 20px
+      height 20px
+      display block
+      margin 8px 0
     }
     &:checked:after{
-      content url('../assets/images/circle2.svg')
+      // content url('../assets/images/circle2.svg')
+      content 'X'
+      display block 
+      color #D0104C
+      font-size 20px
+      // margin-bottom 5px
+      line-height 20px
     }
   }
   .destory{

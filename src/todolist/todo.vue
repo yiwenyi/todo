@@ -79,13 +79,14 @@ export default {
 .add-input{
   position relative
   width 100%
-  font-size 24px
+  font-size 20px
   line-height 1.4em
   border none
   outline none 
   padding 6px
   box-sizing border-box
   // font-smoothing antialiased 
+  font-family miao
   padding 16px 16px 16px 60px
   box-shadow inset 0 -2px 1px rgba(0,0,0,0)
 }

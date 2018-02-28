@@ -24,7 +24,7 @@ const config = {
         loader:'babel-loader'
       },
       {
-        test:/\.(jpg|gif|jpeg|png|svg)$/,
+        test: /\.(jpg|gif|jpeg|png|svg|ttf)$/,
         use:[
           {
             loader:'url-loader',
