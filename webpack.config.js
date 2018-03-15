@@ -43,7 +43,12 @@ const config = {
         NODE_ENV :isDev? '"development"' : '"production"'
       }
     }),
-    new HTMLPlugin()
+    new HTMLPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      "window.jQuery": "jquery"
+    })
   ]
 }
 

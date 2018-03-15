@@ -70,20 +70,20 @@ export default {
     &:after{
       // content url('../assets/images/circle.svg')
       content ''
-      border 2px solid #D0104C
+      border 1px solid #D0104C
+      border-radius 50%
       width 20px
       height 20px
       display block
-      margin 8px 0
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
     }
     &:checked:after{
       // content url('../assets/images/circle2.svg')
-      content 'X'
-      display block 
-      color #D0104C
-      font-size 20px
-      // margin-bottom 5px
-      line-height 20px
+      border 11px solid #D0104C
+      width 0
+      height 0
     }
   }
   .destory{
