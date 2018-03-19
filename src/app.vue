@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="cover"></div>
-    <div id="welcome" v-show="typedIsCompleted">
+    <!-- 打印机效果 -->
+    <!-- <div id="welcome" v-show="typedIsCompleted">
       <typed @isTypeComplete="welcomeFade"></typed>
-    </div>
+    </div> -->
     <Header></Header>
     <Todo></Todo>
     <Footer></Footer>
@@ -16,6 +17,7 @@ import Header from './todolist/header.vue'
 import Footer from './todolist/footer.jsx'
 import Todo from './todolist/todo.vue'
 import Typed from './todolist/typed.vue'
+import Register from './todolist/register.vue'
 
 
 
@@ -29,7 +31,8 @@ export default {
     Header,
     Footer,
     Todo,
-    Typed
+    Typed,
+    Register,
   },
   methods:{
     welcomeFade(){
