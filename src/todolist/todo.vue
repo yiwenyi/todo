@@ -75,6 +75,9 @@ export default {
   width 600px
   margin 0 auto 
   box-shadow 0 0 5px #666
+  height 400px
+  overflow: scroll
+  background-color #fff
 }
 .add-input{
   position relative
