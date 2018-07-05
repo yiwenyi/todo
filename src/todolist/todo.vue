@@ -45,6 +45,11 @@ export default {
       return this.todos.filter(todo => todo.completed === completed)
     }
   },
+  watch:{
+    todos:function(val, oldVal){
+      window.localStorage.setItem('todos',JSON.stringify(this.todos))
+    }
+  },
   methods:{
     addTodo(e){
       var val =  e.target.value
